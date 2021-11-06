@@ -12,53 +12,125 @@
         <section data-markdown>
           <textarea data-template>
             # NPM
+
             ---
+
             ## Overview
+            * What is Node.js
             * What is npm?
             * Installation
             * How to get started
             * package.json
             * npm and git
+
             ---
+
+            ## What is Node.js
+            > Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. (https://nodejs.org/en/)
+            * Node.js lets you run JavaScript outside of your web browser
+            * When you install Node.js, you install the Node.js CLI as well as **npm**
+
+            ---
+
             ## What is npm?
             * Online repository for JavaScript projects
             * Package installation and version management
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNbFagCBlwo" allowfullscreen></iframe>
+
             ---
+
+            ## What is npm?
+            With npm you can manage foreign code used in your project.
+
+            Examples: React, jQuery, TypeScript, etc.
+
+            ---
+
             ## Installation
-            See [setup guide](https://github.com/dwin94/focus-track-javascript-advanced/setup/README.md)
+            See [setup guide](https://github.com/dwin94/focus-track-javascript-advanced/blob/main/setup/README.md)
+
             ---
+
             ## How to get started?
             * Create a new folder
-            * Navigate into the folder with your CLI
+            * Navigate into the folder with your CLI and run the following commands:
             ```
             npm init -y
             npm install cowsay
             ```
-
             * Open the folder in VSCode and inspect package.json
+
             ---
+
+            ## How to get started?
             * cowsay is a package on [npm](https://www.npmjs.com/package/cowsay)
             * You installed cowsay into your project
-            * It is now listed in package.json as a dependency
+            * It is now listed in package.json as a dependency (code which your code needs in order to work)
+
             ---
-            ## Use a package
-            In package.json add a script
+
+            ### Use cowsay package in CLI:
+
+            * In package.json add the following script
             ```
             "scripts": {
-              "my-first-script": "cowsay npm is cool"
+                "my-first-script": "cowsay npm is cool"
             }
             ```
-            In your CLI, run the following command:
+            * In your CLI, run the following command:
             ```
             npm run my-first-script
             ```
+
             ---
+
+            ### Use cowsay package in browser:
+
+            * Create an HTML file
+            * Add a script tag with the source: "./node_modules/cowsay/build/cowsay.umd.js"
+            * Add a script tag with the following content:
+            ```
+            console.log(cowsay.say({
+                text: "npm is cool"
+            }));
+            ```
+            * Open the website in your browser
+
+            ---
+
+            ## Node.js and npm
+            * We now can use JavaScript in our Browser and in our CLI
+
+            ---
+
             ## package.json
+            Is used to manage the project and the foreign code in the project
+            * `scripts` help us to automate tasks
+            * `dependencies` lists foreign code and its version
+            * `devDependencies` contains foreign code we only need for development
+
+            ---
+
+            ## npm and git
+            * The foreign code is downloaded to a folder called `node_modules`
+            * The files `package.json` and `package-lock.json` define, which code and which version is downloaded
+            * The `node_modules` folder can be deleted and only with the two files be re-created
+            * Therefore, the `node_modules` folder is not tracked with git
+
             ---
             ## npm and git
-            <!-- * gitignore -->
+            Exclude the `node_modules` from being tracked:
+            * Create a file `.gitignore`
+            * Add the following content:
+            ```
+            node_modules
+            ```
+
+            ---
+
+            ## Exercises
+            [npm exercises](https://github.com/dwin94/focus-track-javascript-advanced/blob/main/npm/README.md)
           </textarea>
         </section>
       </div>
