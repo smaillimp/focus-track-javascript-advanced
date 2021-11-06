@@ -12,6 +12,6 @@
      - Install homebrew, see: https://brew.sh/
      - Install Node.js via homebrew, see https://formulae.brew.sh/formula/node
 
-2. Check if the installation was successful. Enter the following commands in your terminal:
+2. Check if the installation was successful. Enter the following commands in your CLI:
    - `node --version`
    - `npm --version`

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>npm</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+            # NPM
+            ---
+            ## Overview
+            * What is npm?
+            * Installation
+            * How to get started
+            * package.json
+            * npm and git
+            ---
+            ## What is npm?
+            * Online repository for JavaScript projects
+            * Package installation and version management
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNbFagCBlwo" allowfullscreen></iframe>
+            ---
+            ## Installation
+            See [setup guide](https://github.com/dwin94/focus-track-javascript-advanced/setup/README.md)
+            ---
+            ## How to get started?
+            * Create a new folder
+            * Navigate into the folder with your CLI
+            ```
+            npm init -y
+            npm install cowsay
+            ```
+
+            * Open the folder in VSCode and inspect package.json
+            ---
+            * cowsay is a package on [npm](https://www.npmjs.com/package/cowsay)
+            * You installed cowsay into your project
+            * It is now listed in package.json as a dependency
+            ---
+            ## Use a package
+            In package.json add a script
+            ```
+            "scripts": {
+              "my-first-script": "cowsay npm is cool"
+            }
+            ```
+            In your CLI, run the following command:
+            ```
+            npm run my-first-script
+            ```
+            ---
+            ## package.json
+            ---
+            ## npm and git
+            <!-- * gitignore -->
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script type="module" src="./reveal-setup.js"></script>
+  </body>
+</html>
