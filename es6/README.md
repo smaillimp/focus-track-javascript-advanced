@@ -19,9 +19,9 @@ Use object destructuring to solve the problem.
 
 ## array destructuring
 
-Assign the first value of the `numbers` array to the variable `one` and the second value of the array to the variable `two`. Use array destructuring.
+Assign the first value of the `numbers` array to the variable `one` and the second value of the array to the variable `two`. Use array destructuring. Feel free to remove the existing variables and delare new ones with the same name.
 
-Assign the first value of the `characters` array to the variable `a` and all the other values to the variable `others` as an array.
+Assign the first value of the `characters` array to the variable `a` and all the other values to the variable `others` as an array. Feel free to remove the existing variables and delare new ones with the same name.
 
 ## spread operator
 

@@ -2,6 +2,8 @@
 
 ## Create project with prettier
 
+Prettier is a code formatter. It helps your team to format your code in a consistent way, regardless who is working on it.
+
 1. Create a new folder
 2. Change the folder to a git repository
 3. Create a package.json file with `npm init`
