@@ -2,9 +2,9 @@
 
 ## Counter
 
-1. Navigate into this folder
+1. Navigate into this folder.
 
-2. Create a new react app with `npx create-react-app exercise-part-one`
+2. Create a new react app with `npx create-react-app exercise-part-one`.
    Here is an explanation about [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner).
 
 3. Create a new component `Counter` in a new file `counter.js`.
