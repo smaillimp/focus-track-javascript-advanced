@@ -17,7 +17,7 @@ const CatsImages = ({ initalBreedId }) => {
 
         setBreeds(breedNamesAndIds);
       });
-  }, [initalBreedId]);
+  }, []);
 
   useEffect(() => {
     if (!breedId) {

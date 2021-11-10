@@ -5,11 +5,11 @@
 1. Navigate into this folder
 
 2. Create a new react app with `npx create-react-app exercise-part-one`
-   Here is an explanation about [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner)
+   Here is an explanation about [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner).
 
 3. Create a new component `Counter` in a new file `counter.js`.
 
-4. Delete the files `App.css` and `App.test.js`.
+4. Delete the files `App.css` and `App.test.js` and remove the import of `App.css` from the `App.js` file.
 
 5. Delete the content of the `App` component. Instead add a `div`, which contains the title "Hello" and the `Counter` component below.
 
@@ -25,7 +25,7 @@
 
 ## Name list
 
-1. Create a component `Names` and render it below the `Counter` component.
+1. Create a component `Names` and render it below the `Counter` component in `App.js`.
 
 2. Add the following array before the component:
 
@@ -39,7 +39,28 @@ const firstNames = ['David', 'Peter', 'Max'];
 
    - log the name to the console
    - remove it from the list<br />
-     Use `setState` to store the clicked first names in an array. Always use a new array when updating the state. Use the filter method to filter out the clicked first names.
+     Use `setState` to store the clicked first names in an array. Always use a new array when updating the state. Use the filter and Array.includes method to filter out the clicked names.
+
+IMPORTANT:
+React will not rerender, if the old state and the new state have the same value or reference. See [React Docs](https://reactjs.org/docs/hooks-reference.html#bailing-out-of-a-state-update).
+Example:
+
+```js
+const myArray = [1, 2];
+const oldState = myArray;
+
+myArray.push(3);
+const newSate = myArray;
+
+Object.is(oldState, newSate); // Even tough the array has 1 more item, it still has the same reference.
+
+// Correct way:
+const myArray = [1, 2];
+const oldState = myArray;
+
+const newSate = [...myArray, 3];
+Object.is(oldState, newSate);
+```
 
 5. Create a new component `ClickedNames` and render it below the unordered list in `Names.js`.
 
@@ -51,7 +72,7 @@ const firstNames = ['David', 'Peter', 'Max'];
 
 1. Create a new component `CatsImages` and render it below the `Names` component in `App.js`.
 
-2. In CatsImages create a form with a select dropdown to select the breed. Load the breeds from `https://api.thecatapi.com/v1/breeds`.
+2. In `CatsImages` create a form with a select dropdown to select the breed. Load the breeds from `https://api.thecatapi.com/v1/breeds`.
 
 3. When changing the breed, load a new cat image from `https://api.thecatapi.com/v1/images/search?breed_ids=<SELECTED_BREED_ID>` and display it.
 
