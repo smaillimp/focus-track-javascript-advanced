@@ -19,9 +19,9 @@ Use object destructuring to solve the problem.
 
 ## array destructuring
 
-Assign the first value of the `numbers` array to the variable `one` and the second value of the array to the variable `two`. Use array destructuring. Feel free to remove the existing variables and delare new ones with the same name.
+Assign the first value of the `numbers` array to the variable `one` and the second value of the array to the variable `two`. Use array destructuring. Feel free to remove the existing variables and declare new ones with the same name.
 
-Assign the first value of the `characters` array to the variable `a` and all the other values to the variable `others` as an array. Feel free to remove the existing variables and delare new ones with the same name.
+Assign the first value of the `characters` array to the variable `a` and all the other values to the variable `others` as an array. Feel free to remove the existing variables and declare new ones with the same name.
 
 ## spread operator
 
@@ -41,4 +41,4 @@ If you have not done it already, write `getLargeBooks` using an arrow function i
 
 ## default parameters
 
-Implement the function `sum`. When given 2 arguments, it adds the values. Then given 1 argument, it adds 10 to the argument. Use a default parameter.
+Implement the function `sum`. When given 2 arguments, it adds the values. When given 1 argument, it adds 10 to the argument. Use a default parameter.
