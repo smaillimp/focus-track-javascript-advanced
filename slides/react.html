@@ -18,6 +18,7 @@
             ## Overview
             * Frontend Masters account
             * React Frontend Masters video part 1
+            * Quiz part 1
             * Exercises part 1
             * React Frontend Masters video part 2
             * Exercises part 2
@@ -29,7 +30,7 @@
             * You will watch some of the Frontend Master courses instead to receiving slides from us
               * React
               * Node.js
-              * Node.js API
+              * Node.js REST API
               * TypeScript
 
             ---
@@ -39,6 +40,75 @@
             * Watch until 3h 33mins and code along with the teacher
             [Intro to React](https://frontendmasters.com/courses/complete-react-v6/)
             * Work on the first part of the exercises afterwards
+
+            ---
+
+            ## Quiz part 1
+
+            ---
+
+            What is a component?
+
+            ---
+
+            ### Component
+            A piece of the UI that we can reuse.
+
+            ---
+
+            What are props?
+
+            ---
+
+            ### props
+
+            Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+            <small>https://reactjs.org/docs/components-and-props.html</small>
+
+            ---
+
+            What is useState?
+
+            ---
+
+            ### useState
+
+            As react rerenders (executes) a component many times, state can not be stored in "normal" variables. `useState` helps to keep state even when the component rerenders.
+
+            ---
+
+            ### useState
+
+            Additionally, it triggers a rerender.
+            ```
+            useState(0) -> 0 is displayed on the screen
+            click updates state to 1 -> rerender
+            1 is displayed on the screen
+            ```
+
+            [React Fundamentals: What Causes a React Component to Re-Render](https://www.youtube.com/watch?v=LIVZTQFkuUs)
+
+            ---
+
+            What is useEffect?
+
+            ---
+
+            ### useEffect
+
+            The Effect Hook lets you perform side effects. <small>https://reactjs.org/docs/hooks-effect.html</small>
+
+            A side effect is code which affects something outside of your component.
+            * network requests
+            * manipulate the DOM directly
+            * setTimeout (uses a browser API)
+
+            ---
+
+            ### useEffect
+            Great article about useEffect:
+
+            [A Simple Explanation of React.useEffect()](https://dmitripavlutin.com/react-useeffect-explanation/)
 
             ---
 
