@@ -4,7 +4,7 @@
 
 1. Navigate into this folder
 
-2. Create a new react app with `npx create-react-app exercise-part-two` and add follow the instructions to set up [React Router](https://reactrouter.com/docs/en/v6/getting-started/installation#create-react-app). You should have a Home and an About page in the end.
+2. Create a new react app with `npx create-react-app exercise-part-two` and follow the instructions to set up [React Router](https://reactrouter.com/docs/en/v6/getting-started/installation#create-react-app). You should have a Home and an About page in the end.
 
 3. Move the `Home` component and the `About` component each into a separate file.
 

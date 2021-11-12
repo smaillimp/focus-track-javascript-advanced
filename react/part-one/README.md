@@ -19,7 +19,7 @@
 
 8. Don't render the "count-down" button when the counter value is smaller or equals 0. See: https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator
 
-9. Add a yellow background color to the `div` Use a CSS class.
+9. Add a yellow background color to the `div`. Use a CSS class.
 
 10. Add a red font color to the counter value if it is larger than 10. Use a CSS class.
 
