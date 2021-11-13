@@ -35,15 +35,9 @@ Currently, all the pages have the same structure:
 </main>
 ```
 
-1. Create a new component `Page`, which provides this structure as reusable component. It accepts two props:
+1. Create a new component `Page` as class component. It returns the structure from above and accepts two props:
 
-   - `title`, which is then rendered between the h2 tags
+   - `title`, which is then rendered as h2 tag
    - `children`, to pass down the content of the page. See [React Documentation](https://reactjs.org/docs/composition-vs-inheritance.html#containment).
 
 2. Use this `Page` component in the `Home`, `About` and `Contact` component.
-
-## Bonus: Context API
-
-1. Add an additional page `FontColor`.
-
-<!-- 2. TODO: https://reactjs.org/docs/context.html -->
