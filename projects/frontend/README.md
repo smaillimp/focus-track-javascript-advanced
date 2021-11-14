@@ -1,10 +1,14 @@
 # React project
 
-You write a simple Twitter clone:
+Write a simple Twitter clone with the following pages:
 
 - Login page
-- All tweets page (protected)
-- New tweet page (protected)
+- All tweets page (protected - login required)
+- New tweet page (protected - login required)
+
+## Backend
+
+- Backend domain: https://js-advanced-twitter.herokuapp.com/
 
 ## Setup
 
@@ -20,7 +24,7 @@ curl --location --request POST 'http://<DOMAIN>/register' \
 ## Login page
 
 - Each user is has to log in before using the application
-- When the user opens another page first, redirect the user to the login page
+- When the user opens another page first, redirect the user to the login page. Use `RequireLogin.js` to implement this behaviour.
 - Create a form for email and password and make the following call to login:
 
 ```js

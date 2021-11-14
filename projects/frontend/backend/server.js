@@ -1,5 +1,6 @@
 const jsonServer = require('json-server');
 const auth = require('json-server-auth');
+const middlewares = jsonServer.defaults();
 
 const PORT = process.env.PORT || 3000;
 
@@ -37,18 +38,13 @@ const insertCreationDate = (request, _response, next) => {
   next();
 };
 
-const logger = (request, _response, next) => {
-  console.log(request.method, request.url);
-  next();
-};
-
 // setup auth and permissions
 const rules = auth.rewriter({
   users: 600,
   tweets: 640,
 });
 
-app.use(logger);
+app.use(middlewares);
 app.use(rules);
 app.use(auth);
 app.use(jsonServer.bodyParser);
