@@ -8,14 +8,14 @@ Write a simple Twitter clone with the following pages:
 
 ## Backend
 
-- Backend domain: https://js-advanced-twitter.herokuapp.com/
+- Backend domain: https://js-advanced-twitter.herokuapp.com
 
 ## Setup
 
 Generate one or many users for yourself. **Do not use your real email and password.** Replace domain with the real domain:
 
 ```
-curl --location --request POST 'http://<DOMAIN>/register' \
+curl --location --request POST '<DOMAIN>/register' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'email=user@react-dev.com' \
 --data-urlencode 'password=secure'
@@ -31,7 +31,7 @@ curl --location --request POST 'http://<DOMAIN>/register' \
 fetch('<DOMAIN>/login', {
   method: 'POST',
   headers: {
-    'Content-Type': 'application/x-www-form-urlencoded',
+    'Content-Type': 'application/json',
   },
   body: JSON.stringify({
     email: 'user@react-dev.com',
@@ -53,8 +53,7 @@ fetch('<DOMAIN>/login', {
 - Load all tweets and display them on the page:
 
 ```js
-fetch('http://localhost:3000/tweets', {
-  method: 'GET',
+fetch('<DOMAIN>/tweets', {
   headers: {
     Authorization: 'Bearer <ACCESS_TOKEN>',
   },
@@ -70,10 +69,10 @@ fetch('http://localhost:3000/tweets', {
 - Send the form data to the backend when the form is submitted:
 
 ```js
-fetch('http://localhost:3000/tweets', {
+fetch('<DOMAIN>/tweets', {
   method: 'POST',
   headers: {
-    'Content-Type': 'application/x-www-form-urlencoded',
+    'Content-Type': 'application/json',
     Authorization: 'Bearer <ACCESS_TOKEN>',
   },
   body: JSON.stringify({
@@ -82,7 +81,9 @@ fetch('http://localhost:3000/tweets', {
     userId: '<USER_ID>',
   }),
 })
-  .then((response) => response.text())
+  .then((response) => response.json())
   .then((result) => console.log(result))
   .catch((error) => console.log('error', error));
 ```
+
+- Redirect to the all tweets page after successful creation
