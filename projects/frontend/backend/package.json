@@ -2,11 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server.js",
-    "web": "npm run start"
+    "start": "node server.js"
   },
   "dependencies": {
     "json-server": "^0.17.0",
     "json-server-auth": "^2.1.0"
+  },
+  "engines": {
+    "node": "16.13.0"
   }
 }
