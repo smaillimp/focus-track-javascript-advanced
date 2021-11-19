@@ -35,7 +35,7 @@ const firstNames = ['David', 'Peter', 'Max'];
 
 3. Display all the firstnames in an unordered list. (use map)
 
-4. When clicking a first name
+4. When clicking a name
 
    - log the name to the console
    - remove it from the list<br />
