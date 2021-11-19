@@ -34,7 +34,7 @@ fetch('<DOMAIN>/login', {
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
-    email: 'user@react-dev.com',
+    email: 'mickey-mouse@react-dev.com',
     password: 'secure',
   }),
 })
