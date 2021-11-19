@@ -10,16 +10,16 @@ Write a simple Twitter clone with the following pages:
 
 - Backend domain: https://js-advanced-twitter.herokuapp.com
 
-## Setup
+## Users
 
-Generate one or many users for yourself. **Do not use your real email and password.** Replace domain with the real domain:
+The following users exist. The password is always `secure`.
 
-```
-curl --location --request POST '<DOMAIN>/register' \
---header 'Content-Type: application/x-www-form-urlencoded' \
---data-urlencode 'email=user@react-dev.com' \
---data-urlencode 'password=secure'
-```
+- mickey-mouse@react-dev.com
+- donald-duck@react-dev.com
+- captain-jack-sparrow@react-dev.com
+- nemo@react-dev.com
+- ariel@react-dev.com
+- winnie-the-pooh@react-dev.com
 
 ## Login page
 

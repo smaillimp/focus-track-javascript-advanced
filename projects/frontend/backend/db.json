@@ -1,4 +1,57 @@
 {
-  "users": [],
-  "tweets": []
+  "users": [
+    {
+      "email": "mickey-mouse@react-dev.com",
+      "password": "$2a$10$omuHoEAX9qg2W9l2Y3uqY.ZHq8MUSYh/WROjBhvecrfHWCuEvjZAq",
+      "id": 1
+    },
+    {
+      "email": "donald-duck@react-dev.com",
+      "password": "$2a$10$NV31ydG.w8qpQxwdIhcYUuJphJYs0Rh/KW.1q3aZPzVAtVDI.Ocbe",
+      "id": 2
+    },
+    {
+      "email": "captain-jack-sparrow@react-dev.com",
+      "password": "$2a$10$SPAG8xYgsQkHMpYerxIuL.P2ZQdjKJaVEPjHoSZMfQ.V/NaY1DTf.",
+      "id": 3
+    },
+    {
+      "email": "nemo@react-dev.com",
+      "password": "$2a$10$b9sBj1U6mKS/mPaWC.QAJO7AF213Efmp8pePnLZbA/x1wcJaDhZjW",
+      "id": 4
+    },
+    {
+      "email": "ariel@react-dev.com",
+      "password": "$2a$10$tX.9j9gCbCFOuBQEpIJPAO7sruko9fT7u1C.SrYSLtYplH4SIbyze",
+      "id": 5
+    },
+    {
+      "email": "winnie-the-pooh@react-dev.com",
+      "password": "$2a$10$xLW2CP25NEVD5VP2gRKnIemDSeseHWlyXVgE86L85Qsl.ZY1tR.ZG",
+      "id": 6
+    }
+  ],
+  "tweets": [
+    {
+      "title": "Honey",
+      "text": "I like honey :)",
+      "userId": "6",
+      "createdAt": 1637324969441,
+      "id": 1
+    },
+    {
+      "title": "Hey",
+      "text": "H-Hey everybody! It’s me, Mickey Mouse!",
+      "userId": "1",
+      "createdAt": 1637330011175,
+      "id": 2
+    },
+    {
+      "title": "Arrw",
+      "text": "I’m dishonest, and a dishonest man you can always trust to be dishonest. Honestly. It’s the honest ones you want to watch out for, because you can never predict when they’re going to do something incredibly … stupid.",
+      "userId": "3",
+      "createdAt": 1637330161812,
+      "id": 3
+    }
+  ]
 }
