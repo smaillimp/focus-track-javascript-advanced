@@ -47,6 +47,8 @@ fetch('<DOMAIN>/login', {
 ```
 
 - Store the access token and the user id in state. Then redirect to the all tweets page.
+- Optional: Store the access token and the user id in the session storage. When the page is reloaded, the user stays logged in. <br />
+  Hint: When loading the page, the values should be read from the session storage. Whenever the values change, the vaues should be updated in the storage.
 
 ## All tweets page
 
