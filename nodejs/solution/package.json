@@ -1,0 +1,15 @@
+{
+  "name": "solution",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "start-with-port": "PORT=1234 node server.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "16.13.0"
+  }
+}
