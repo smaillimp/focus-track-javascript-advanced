@@ -8,14 +8,16 @@ For this exercise, it is recommended to create a new folder (for example on your
 2. Create a package.json file using `npm init -y`
 3. Install [express](https://www.npmjs.com/package/express)
 4. Create a file `server.js` and write the following web server:
-   - Use Google, express has a large community
-   - When testing the web server, make sure to always save your changes, stop the running server with `Ctrl + c` and run the server again with `node server.js`.
 
 ```bash
 GET / # returns an HTML file. It contains the title "Hello World" and a link to /another-page
 
 GET /another-page # returns an HTML file. It contains the title "Hello Again" and a link to the home page (/).
 ```
+
+- Hints:
+  - Use Google if you face a problem, express has a large developer community.
+  - When testing the web server, make sure to always save your changes, stop the running server with `Ctrl + c` and run the server again with `node server.js`.
 
 5. Create the script `start`, which runs the server: `"start": "node server.js"`
 6. Make sure the server port can be passed from outside and has a fallback if it is not specified.
@@ -36,7 +38,7 @@ GET /another-page # returns an HTML file. It contains the title "Hello Again" an
 8. Extend the server with the following routes:
 
 ```bash
-GET /jokes # returns all the jokes as json.
+GET /jokes # returns all the jokes as json
 
 POST /jokes with json body { "joke": "<joke here>" } # reads the json body and adds the joke to the jokesDatabase. Remember to add the body parser.
 ```
