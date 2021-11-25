@@ -89,3 +89,8 @@ fetch('<DOMAIN>/tweets', {
 ```
 
 - Redirect to the all tweets page after successful creation
+
+## Deployment
+
+- Deploy your site on Netlify.
+  - To make the page reloads work, check out [this article about redirects on Netlify](https://ridbay.medium.com/react-routing-and-netlify-redirects-fd1f00eeee95).
