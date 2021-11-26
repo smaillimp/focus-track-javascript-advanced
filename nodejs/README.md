@@ -53,11 +53,11 @@ POST /jokes with json body { "joke": "<joke here>" } # reads the json body and a
     }
     ```
 
-11. Create an [Heroku](https://www.heroku.com/) account
+11. Create a new GitHub reposity and push your local repo to this new GitHub repo.
 
-12. Create a new GitHub reposity and push your local repo to this new GitHub repo.
+12. Create an [Heroku](https://www.heroku.com/) account
 
-13. Deploy the repository via the Heroku UI:
+13. Deploy the GitHub repository via the Heroku UI:
     - "New" - "Create new app"
     - App name: Choose any name
     - Choose a region: Europe
@@ -71,9 +71,9 @@ POST /jokes with json body { "joke": "<joke here>" } # reads the json body and a
 
 ## Testing with Jest
 
-In the folder `tests` is a file `best-working-code`. It contains some functions, but unfortunately, the programmer made some mistakes.
+In the folder `tests` is a file `best-working-code.js`. It contains some functions, but unfortunately, the programmer made some mistakes.
 
 1. In the folder `tests`, create a `package.json` file.
 2. Install Jest by following the [Getting started guide](https://jestjs.io/docs/getting-started)
-3. Write test cases for the functions of `best-working-code`. Some of them should fail, because of the mistakes in the code.
-4. Fix the mistakes in `best-working-code` and run your tests again. Now everything should be green.
+3. Write test cases for the functions of `best-working-code.js`. Some of them should fail, because of the mistakes in the code.
+4. Fix the mistakes in `best-working-code.js` and run your tests again. Now everything should be green.
