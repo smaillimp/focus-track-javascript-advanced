@@ -1,0 +1,11 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    padding: 2rem;
+    text-decoration: none;
+}
