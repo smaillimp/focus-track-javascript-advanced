@@ -140,4 +140,6 @@ const splitQuestionAndAnswer = (jokeString) => {
 - Route: any route, which does not lead to a page.
 - Display a nice message to the user that the requested page does not exist.
 
-Deploy the application with [Netlify](https://www.netlify.com/).
+Deploy your site on [Netlify](https://www.netlify.com/).
+
+- To make the page reloads work, check out [this article about redirects on Netlify](https://ridbay.medium.com/react-routing-and-netlify-redirects-fd1f00eeee95).
