@@ -6,7 +6,6 @@
     "build": "parcel build '*.html'"
   },
   "dependencies": {
-    "decktape": "^3.3.0",
     "reveal.js": "^4.1.3"
   },
   "devDependencies": {
