@@ -4,30 +4,31 @@ export const book = {
 };
 
 export function getItemDescription(book) {
-  return `TODO`;
+  let {name, price} = book;
+  return `The book is called '${name}' and it costs CHF ${price}.`;
 }
 
 // -------------
 
 const numbers = [1, 2];
-export let one;
-export let two;
+export let [one, two] = numbers;
+
 
 // -------------
 
 const characters = ['a', 'b', 'c', 'd', 'e'];
-export let a;
-export let others;
+export let [a, ...others] = characters;
 
 // -------------
 
-export let numbersAndCharacters;
+export let numbersAndCharacters = [...numbers, ...characters];
 
 // -------------
 
 export const wordsArray = ['hello', 'javascript'];
+
 export function wordsToUpperCase(words) {
-  return 'TODO';
+  return words.map(word => word.toUpperCase());
 }
 
 // -------------
@@ -64,9 +65,9 @@ export const books = [
 ];
 
 export function getLargeBooks(books) {
-  return 'TODO';
+  return books.filter(book => book.pages > 500);
 }
 
 // -------------
 
-export const sum = () => 'TODO';
+export const sum = (a, b = 10) => a + b;
