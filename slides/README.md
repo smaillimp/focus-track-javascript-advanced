@@ -5,7 +5,7 @@
 1. Download the repository:
 
 ```sh
-git clone git@github.com:dwin94/focus-track-javascript-advanced.git
+git clone git@github.com:Powercoders-International/focus-track-javascript-advanced.git
 ```
 
 2. Navigate into the slides folder:
@@ -30,7 +30,7 @@ npm start
 
 After each commit to main, the slides are automatically deployed to Netlify. In case the deployment needs to be set up again, make sure to use the following deploy settings:
 
-- Repository: `github.com/dwin94/focus-track-javascript-advanced`
+- Repository: `github.com/Powercoders-International/focus-track-javascript-advanced`
 - Base directory: `slides`
 - Build command: `npm run build`
 - Publish directory: `slides/dist`
