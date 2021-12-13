@@ -38,7 +38,7 @@ const insertCreationDate = (request, _response, next) => {
   next();
 };
 
-// setup auth and permissions
+// setup auth and permissions, see https://www.npmjs.com/package/json-server-auth#guarded-routes-
 const rules = auth.rewriter({
   users: 600,
   tweets: 640,
@@ -49,6 +49,7 @@ app.use(rules);
 app.use(auth);
 app.use(jsonServer.bodyParser);
 app.post('/tweets', insertCreationDate);
+// https://www.npmjs.com/package/json-server#custom-output-example
 router.render = replaceUserIdWithEmail;
 app.use(router);
 
