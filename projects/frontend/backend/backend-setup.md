@@ -4,7 +4,7 @@
 
 As the application is in a subfolder of the git repository, there are some extra steps needed:
 
-1. Deploy the application on heroku with the web UI. The deploy is going to fail.
+1. Deploy the application on heroku with the web UI. This first deploy is going to fail.
 
    1. Create new app
    2. Add name "js-advanced-twitter" and Region "Europe" and click "Create app"
